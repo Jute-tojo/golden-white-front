@@ -18,12 +18,12 @@ export class AppComponent implements OnInit{
   produits: any;
   uri: string = "https://golden-white.herokuapp.com/api/";
   constructor(private httpClient: HttpClient) {
-    this.httpClient.get(this.uri)
+    /*this.httpClient.get(this.uri)
         .subscribe(
             data => {
               this.produits = data;
             }
-        );
+        );*/
   }
 
   ngOnInit(): void {
